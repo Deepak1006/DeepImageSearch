@@ -124,7 +124,7 @@ class SearchImage:
         axes=[]
         fig=plt.figure(figsize=(20,15))
         for a in range(4*4):
-            axes.append(fig.add_subplot(4, 4, a+1))  
+            axes.append(fig.add_subplot(4, 4, a))  
             plt.axis('off')
             plt.imshow(Image.open(img_list[a]))
         fig.tight_layout()
